@@ -1,0 +1,38 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+header
+{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+nav
+{
+    background-color: green;
+    float: right;
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+}
+
+
+section:nth-child(1)
+{
+background-color: red;
+height: 300px;
+
+}
+
+section:nth-child(2)
+{
+background-color: orange;
+height: 300px;
+
+}
