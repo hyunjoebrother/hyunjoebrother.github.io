@@ -1,38 +1,70 @@
-*
-{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-
-header
-{
-    background-color: black;
-    color:white;
-    text-align: center;
+header{
+    background-color: lightgoldenrodyellow;
+    color:black;
+    size:100px;
 }
 
-nav
-{
-    background-color: green;
+.bi bi-house-fill{
+    position: relative;
+    right:300px;
+}
+
+
+
+.bi bi-person-square{
+    top:100px;
     float: right;
-    width: 100px;
-    height: 50px;
-    padding: 15px;
 }
 
 
-section:nth-child(1)
-{
-background-color: red;
-height: 300px;
-
+nav{
+    top:0px;
+    height:70px;
 }
 
-section:nth-child(2)
-{
-background-color: orange;
-height: 300px;
+.form-control mr-sm-2{
+    border:500px;
+    padding:100px;
+}
 
+article{
+    width:1200px;
+}
+
+aside{
+    border-color:black;
+    top:300px;
+    right: 20px;
+    position: absolute;
+    width:300px;
+    padding:0px;
+    float:right;
+}
+
+.jumbotron jumbotron-fluid
+{
+    height:200px;
+}
+
+.card{
+    position:absolute;
+}
+
+.info_box{
+    text-align: center;
+    float:right;
+    position:absolute;
+    top:70px;
+    left:120px;
+}
+
+footer{
+    width:300px;
+    background-color: lightyellow;
 }
