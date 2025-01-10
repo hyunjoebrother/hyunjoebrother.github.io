@@ -1,230 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="icon" href="/logo.png" />
+    <link rel="shortcut icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link
+      rel="canonical"
+      href="https://hyunjoebrother.github.io/2025-caratparty-linksite/"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="title" content="2025 캐럿 생일 디제잉파티 예약" />
+    <meta name="description" content="2025 캐럿 생일 디제잉파티 예약" />
+    <meta
+      name="Keywords"
+      content="세븐틴, 캐럿, 캐럿 생일, 생일클럽, 디제잉파티"
+    />
+    <meta name="author" content="MEI" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:title" content="2025 캐럿 생일 디제잉파티 예약" />
+    <meta property="og:description" content="2025 캐럿 생일 디제잉파티 예약" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:title" content="2025 캐럿 생일 디제잉파티 예약" />
+    <meta name="twitter:description" content="2025 캐럿 생일 디제잉파티 예약" />
+    <meta
+      name="twitter:url"
+      content="https://hyunjoebrother.github.io/2025-caratparty-linksite/"
+    />
+    <meta name="twitter:site" content="@Prof_Boo116" />
+    <title>2025 캐럿 생일 디제잉파티 예약</title>
 
-</head>
-<body>
+    <script defer src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="assets/style/index.css" rel="stylesheet" />
+    <link href="assets/style/sakura.css" rel="stylesheet" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VE86KF4CQD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <!--헤더: 로고-->
-    <header>
-            <img src="image/tittle.png" alt="">
-    </header>
+      gtag("config", "G-VE86KF4CQD");
+    </script>
 
-    <!--메뉴: 카테고리 (종, 지역, 색깔, 실종 날짜 등등) , 검색창 (해시태그 검색용), 로그인 버튼(팝업창) -->
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "prmg8h8vqr");
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <a href="https://x.com/Prof_Boo116" target="_blank">
+          <img
+            class="text-logo"
+            src="assets/images/logo-text.png"
+            style="width: 100%"
+            alt=""
+        /></a>
+        <div class="name">2025 캐럿 생일 디제잉파티 예약</div>
+        <br />
+
         <div>
-            <button type="button" class="btn btn-danger">종</button>
-            <button type="button" class="btn btn-warning">지역</button>
-            <button type="button" class="btn btn-success">색깔</button>
-            <button type="button" class="btn btn-info">실종날짜</button>
-            <button type="button" class="btn btn-primary">발견장소</button>
-            <button type="button" class="btn btn-secondary">동물보호소</button>
-            <button type="button" class="btn btn-dark">특이사항</button>
-        </div>
-        
-        <div>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
-            </form>
-        </div>
+          <p>
+            “아... 나도 하루만 세_븐_틴 멤버가 되고 싶다”
+            <br />
+            캐럿들이 한 번쯤은 생각해본 "일일세_븐_틴".
+            <br />
 
-        <div>
-            <a href="https://vibe.naver.com/track/25343433"><img src="image/home.png" height="50" width="50" alt=""></a>
-            <a href="https://www.animal.go.kr/front/index.do"><img src="image/heart.png" height="50" width="50" alt=""></a>
-            <a href="bellpopup.html"><img src="image/bell.png" height="50" width="50" alt=""></a>
-            <a href="login.html"><img src="image/person.png" height="50" width="50" alt=""></a>    
+            캐럿 생일 기념, 마치 된 것 같아... 세_븐_틴처럼
+            <br />
+
+            <br />
+            미친듯이
+            <br />
+
+            거침없이
+            <br />
+
+            청춘 가득히
+            <br />
+            <br />
+
+            즐길 수 있는 "캐럿 생일 디제잉파티"에 참여할 캐럿들의 예약을
+            받습니다!
+          </p>
+          <br />
+
+          <div class="info-top">
+            <p>문의는 <a href="https://x.com/Prof_Boo116">@Prof_Boo116</a></p>
+            <p>이벤트 계정으로 부탁드립니다</p>
+          </div>
         </div>
+      </div>
+      <br />
+      <div class="info-box">
+        캐럿 생일 디제잉파티 <strong>예약하기</strong>
+        <div class="toggle" onclick="vibrate()">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <!--details-->
+        <div>
+          <br />
+          <div class="details">
+            <div class="projects">
+              <a
+                href="https://witchform.com/deposit_form.php?idx=747623"
+                class="project"
+                target="_blank"
+              >
+                <i class="fa-solid fa-home"></i>
+                <ul>
+                  <li>
+                    <p>2025.02.15 타임1 : 20-22시 예약하기</p>
+                  </li>
+                  <li><small>미성년자 환영합니다</small></li>
+                </ul>
+              </a>
+
+              <a
+                href="https://witchform.com/deposit_form.php?idx=747625"
+                class="project"
+                target="_blank"
+              >
+                <i class="fa-solid fa-download"></i>
+                <ul>
+                  <li>
+                    <p>2025.02.15 타임2 : 22-24시 예약하기</p>
+                  </li>
+                  <li>
+                    <small>성인만 가능합니다. 맥주! 소주!! 호우!!!!!!</small>
+                  </li>
+                </ul>
+              </a>
+
+              <a
+                href="https://forms.gle/PXRarLUJP65gy45u6"
+                class="project"
+                target="_blank"
+              >
+                <i class="fa-solid fa-download"></i>
+                <ul>
+                  <li>
+                    <p>For Foreigner Carats</p>
+                  </li>
+                  <li><small>2025 HBD Carat DJ Party Reservation</small></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="https://x.com/Prof_Boo116" target="_blank">
+          <div><i class="fa-solid fa-user"></i>문의사항은 Contact Me</div>
+        </a>
+      </div>
+      <br />
+
+      <div class="share-container" id="share-card">
+        <h3>주변에 공유하기 (같이 가요)</h3>
+        <ul>
+          <li class="kakao-button">
+            <img src="assets/images/icon-kakao.png" alt="" />
+          </li>
+          <li class="twitter-button">
+            <img src="assets/images/icon-twitter.png" alt="" />
+          </li>
+          <li class="clip-button">
+            <img src="assets/images/icon-clip.png" alt="" />
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
-
-
-    <!--내용: 인스타처럼 사진 타임라인 형식 -->
-    <article>
-        <section>
-            <div class="card-deck">
-                <div class="card">
-                  <img src="image/pet1.jpg" class="card-img-top" alt="pet1.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">번개</h5>
-                    <p class="card-text">#경기 #일산 #갈색 #놀이터 #목줄</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">17초 전 업데이트</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="image/pet2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">까미</h5>
-                    <p class="card-text">#부산 #요크셔테리어 #갈색 #학교 </p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">1분 전 업데이트</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="image/pet3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">체다</h5>
-                    <p class="card-text">#광주 #치즈색 #갈색 #휴게소 #반점</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">5분 전 업데이트</small>
-                  </div>
-                </div>
-              </div>
-        </section>
-        <br>
-        <section>
-            <div class="card-deck">
-                <div class="card">
-                  <img src="image/pet4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">제이</h5>
-                    <p class="card-text">#서울 #앵무새 #초록색 #편의점</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">33분 전 업데이트</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="image/pet5.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">잼잼</h5>
-                    <p class="card-text">#경기 #부천 #갈색 #공원 #목줄</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">1시간 전 업데이트</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="image/pet6.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">초코</h5>
-                    <p class="card-text">#여수 #토끼 #갈색 #바다</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">1시간 전 업데이트</small>
-                  </div>
-                </div>
-              </div>
-        </section>
-        <br>
-        <section>
-            <div class="card-deck">
-                <div class="card">
-                  <img src="image/pet7.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">피터</h5>
-                    <p class="card-text">#제주 #갈색 #도서관 #스카프</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">3시간 전 업데이트</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="image/pet8.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">춘배</h5>
-                    <p class="card-text">#서울 #강남 #치즈색 #학교</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">1일 전 업데이트</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="image/pet9.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">복실이</h5>
-                    <p class="card-text">#경기 #일산 #흰색 #놀이터 #목줄</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">4일 전 업데이트</small>
-                  </div>
-                </div>
-              </div>
-        </section>
-
-    </article>
-
-    <!--본인 반려동물 등록 버튼 및 프로필, 실시간 제보 위치 지도 (마우스랑 같이 움직임)-->
-    <aside>
-        <!--본인 프로필-->
-        <section>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <img id="MY_PROFILE" src="image/me.jpg" width="100" height="100" alt="메이코패스님">
-                    <span class="thumb_bd"></span>
-
-                <div class="user_info"> 
-                    <div class="info_box"> 
-                        <span class="nickname MY_NICKNAME"><strong>김현조</strong></span>님</a>
-                        <br>
-                        <a href="https://note.naver.com/" target="_parent" class="link_new" data-clk="nmy.mailtit">쪽지<strong class="num MY_MAIL_COUNT">8</strong></a> 
-                        <a href="https://www.facebook.com/profile.php?id=100008044183098" target="_parent" class="link_my" data-clk="nmy.modfy">내정보</a> 
-                        <a href="https://nid.naver.com/nidlogin.logout?returl=https%3A%2F%2Fwww.naver.com" target="_parent" class="link_protect" data-clk="nmy.caution">
-                            <span class="blind">로그아웃</span>
-                    </a> 
-                        <div class="email MY_EMAIL">clara_31@naver.com</div> 
-                    </div> 
-                </div> 
-                    </div>
-                </div>
-              </div>
-
-
-
-            
-        </section>
-
-        <br>
-
-        <section>
-            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                <div class="card-header"><strong>우리 동네 알림</strong></div>
-                <div class="card-body">
-                  <h5 class="card-title">경기도 고양이 일산서구</h5>
-                  <p class="card-text">오후 5시경, 발산중학교 부근에서 반려견 골든 리트리버 실종</p>
-                </div>
-              </div>
-              <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-                <div class="card-header"><strong>우리 동네 알림</strong></div>
-                <div class="card-body">
-                  <h5 class="card-title">서울 강남구 삼성동</h5>
-                  <p class="card-text">새벽 2시경, 코엑스 부근에서 반려묘 노르웨이숲 실종</p>
-                </div>
-              </div>
-        </section>
-
-        <!--스크롤 플로팅 배너-->
-
-        <section>
-            <div class="card" style="width: 18rem;">
-                <img src="image/map.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"><strong>실시간 유기동물 제보 알림</strong><br>인하대학교 후문가 부근에서 실종된 <strong>흰색 말티즈</strong> 위치를 제보를 통해서 실시간으로 나타내고 있습니다.</p>
-                </div>
-              </div>
-        </section>
-    </aside>
-
-
-    <!--제작자 정보 (팝업창) --->
-    <footer>
-        제작자:
-        <a href="https://www.instagram.com/hyunjoebrother/"> 김현조</a>
-    </footer>    
-</body>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/sakura.js"></script>
+    <script src="assets/js/share.js"></script>
+    <script>
+      var sakura = new Sakura("body");
+    </script>
+  </body>
 </html>
